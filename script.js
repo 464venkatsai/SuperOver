@@ -7,6 +7,7 @@ let current_idx = 0
 let CSK_wickets = 0
 let MI_wickets = 0
 let dot = document.getElementsByClassName("dot");
+let batting = document.querySelectorAll(".events button")[0]
 function SuperOver() {
     let score = Math.ceil(Math.random() * 7)-1;
     if (current_idx<12){
@@ -17,12 +18,15 @@ function SuperOver() {
             CSK_wickets+=1
             if(CSK_wickets==2){
                 current_idx=5
+                batting.innerHTML = "RCB Batting"
             }
         }
         else if(current_idx>=6 && possibleScores[score]!="W"){
+            batting.innerHTML = "RCB Batting"
             mi_score+=possibleScores[score]
         }
         else if(current_idx>=6 && possibleScores[score]==="W"){
+            batting.innerHTML = "RCB Batting"
             MI_wickets+=1
             if(MI_wickets==2){
                 current_idx=12

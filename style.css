@@ -3,6 +3,7 @@ body{
     place-items: center;
     color: white;
     background-color:black;
+    height: 100vh;
 }
 *{
     color: white;
@@ -38,6 +39,11 @@ body{
     background-color: white;
     color: black;
 }
+#scores{
+    font-size: 1.25rem;
+    margin: 0 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 .scores{
     display: flex;
     justify-content: space-around !important;
@@ -51,4 +57,11 @@ body{
     color: white;
     font-weight: 600;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#Result{
+    letter-spacing: 0.5px;
+    word-spacing: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: bold;
+    font-weight: 600;
 }
