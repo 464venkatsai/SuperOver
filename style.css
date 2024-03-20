@@ -1,60 +1,77 @@
 body{
     display: grid;
     place-items: center;
-    color: white;
-    background-color:black;
+    color: black;
+    background-color:#e6e7ee;
     height: 100vh;
+    /* overflow: hidden; */
 }
 *{
-    color: white;
+    color: black;
+}
+.content{
+    padding: 2rem 2rem;
+    background: rgba( 255, 255, 255, 0 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 .content section{   
     display: flex;
+    padding: 1rem 2rem;
     align-items: center;
     justify-content:space-between;
 }
 .content section img{
     margin: 0 1rem;
-    width: 26rem;
-    height: 20rem;
+    width: 35%;
+    height: 35%;
+    border-radius: 100%;
 }
 .content section img:last-child{
-    width: 22rem;
-    height: 20rem;
+    width: 35%;
+    height: 16rem;
 }
 .events{
     margin: 0;
-    margin-top: 1rem;
     display: flex;
-    justify-content: space-around !important;
+    justify-content: space-between !important;
+    padding: 0 7rem;
 }
 .events button{
-    background-color: black;
-    border: 1px solid white;
+    border: 2.5px solid black;
     border-radius: 5px;
+    background-color: #000;
+    color: white;
     padding: 0.75rem 2rem;
     font-weight: 600;
 }
 .events button:hover{
-    background-color: white;
+    background-color: transparent;
     color: black;
 }
 #scores{
     font-size: 1.25rem;
     margin: 0 1rem;
+    color: #000;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .scores{
     display: flex;
-    justify-content: space-around !important;
+    justify-content: space-between !important;
+    padding: 0 2rem;
+    width: 100%;
 }
 .scores div{
     display: flex !important;
-    width: 20%;
-    justify-content: space-around;
+    width: 40%;
+    justify-content: space-between !important;
 }
+
 .dot{
-    color: white;
+    color: black;
     font-weight: 600;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -64,4 +81,5 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: bold;
     font-weight: 600;
+    color: #000;
 }
